@@ -895,6 +895,10 @@ cipher-base@^1.0.0, cipher-base@^1.0.1:
   dependencies:
     inherits "^2.0.1"
 
+classnames@^2.1.5:
+  version "2.2.5"
+  resolved "http://registry.npm.taobao.org/classnames/download/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
+
 cliui@^2.1.0:
   version "2.1.0"
   resolved "http://registry.npm.taobao.org/cliui/download/cliui-2.1.0.tgz#4b475760ff80264c762c3a1719032e91c7fea0d1"
@@ -1126,6 +1130,10 @@ diffie-hellman@^5.0.0:
     bn.js "^4.1.0"
     miller-rabin "^4.0.0"
     randombytes "^2.0.0"
+
+director@^1.2.0:
+  version "1.2.8"
+  resolved "http://registry.npm.taobao.org/director/download/director-1.2.8.tgz#c6d9b4dd890e9aff5365183fe9cc8e73994cf2d5"
 
 domain-browser@^1.1.1:
   version "1.1.7"
@@ -2761,6 +2769,14 @@ to-arraybuffer@^1.0.0:
 to-fast-properties@^1.0.1:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/to-fast-properties/download/to-fast-properties-1.0.2.tgz#f3f5c0c3ba7299a7ef99427e44633257ade43320"
+
+todomvc-app-css@^2.0.0:
+  version "2.0.6"
+  resolved "http://registry.npm.taobao.org/todomvc-app-css/download/todomvc-app-css-2.0.6.tgz#0b3667c5e189f1568d9a9bf7947ebd928406961d"
+
+todomvc-common@^1.0.1:
+  version "1.0.3"
+  resolved "http://registry.npm.taobao.org/todomvc-common/download/todomvc-common-1.0.3.tgz#cba1868109caa401b908ebf77794cc1014b74873"
 
 tough-cookie@~2.3.0:
   version "2.3.2"
