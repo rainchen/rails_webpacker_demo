@@ -48,3 +48,5 @@ var app = app || {};
 		}
 	};
 })();
+
+export default app.Utils;

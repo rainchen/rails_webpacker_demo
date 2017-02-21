@@ -1,3 +1,6 @@
+import React from 'react';
+import classNames from 'classnames';
+
 /*jshint quotmark: false */
 /*jshint white: false */
 /*jshint trailing: false */
@@ -106,3 +109,5 @@ var app = app || {};
 		}
 	});
 })();
+
+export default app.TodoItem;

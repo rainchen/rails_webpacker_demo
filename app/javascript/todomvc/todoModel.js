@@ -1,8 +1,11 @@
+import Utils from "./utils";
+
 /*jshint quotmark:false */
 /*jshint white:false */
 /*jshint trailing:false */
 /*jshint newcap:false */
 var app = app || {};
+app.Utils = Utils;
 
 (function () {
 	'use strict';
@@ -85,3 +88,5 @@ var app = app || {};
 	};
 
 })();
+
+export default app.TodoModel;

@@ -1,9 +1,19 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Router } from 'director'
+import TodoFooter from "./footer";
+import TodoItem from "./todoItem";
+import TodoModel from "./todoModel";
+
 /*jshint quotmark:false */
 /*jshint white:false */
 /*jshint trailing:false */
 /*jshint newcap:false */
 /*global React, Router*/
 var app = app || {};
+app.TodoModel = TodoModel;
+app.TodoFooter = TodoFooter;
+app.TodoItem = TodoItem;
 
 (function () {
 	'use strict';
@@ -170,12 +180,14 @@ var app = app || {};
 	var model = new app.TodoModel('react-todos');
 
 	function render() {
-		React.render(
+		ReactDOM.render(
 			<TodoApp model={model}/>,
 			document.getElementsByClassName('todoapp')[0]
 		);
 	}
 
 	model.subscribe(render);
-	render();
+	app.render = render;
 })();
+
+export default app;

@@ -1,9 +1,14 @@
+import React from 'react'
+import Utils from "./utils";
+import classNames from 'classnames';
+
 /*jshint quotmark:false */
 /*jshint white:false */
 /*jshint trailing:false */
 /*jshint newcap:false */
 /*global React */
 var app = app || {};
+app.Utils = Utils;
 
 (function () {
 	'use strict';
@@ -60,3 +65,5 @@ var app = app || {};
 		}
 	});
 })();
+
+export default app.TodoFooter;
