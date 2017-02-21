@@ -54,7 +54,8 @@ config = {
     modules: [
       path.resolve('../app/javascript'),
       path.resolve('../vendor/node_modules')
-    ]
+    ],
+    mainFields: ["browserify", "browser", "module", "main"] // use package.json "browserify" field
   },
 
   resolveLoader: {
