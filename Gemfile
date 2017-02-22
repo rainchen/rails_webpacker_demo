@@ -35,7 +35,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'webpacker', github: 'rails/webpacker'
+gem 'webpacker', github: 'rails/webpacker', ref: '35586c7' # use latest revision to fix BUG "Error: EACCES: permission denied, mkdir '/packs'" when running `rails webpacker:compile`
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
