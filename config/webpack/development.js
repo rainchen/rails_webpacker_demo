@@ -5,6 +5,9 @@ var merge   = require('webpack-merge')
 
 var sharedConfig = require('./shared.js')
 
+var configureHotModuleReplacement = require('./configureHotModuleReplacement')
+sharedConfig.config = configureHotModuleReplacement(sharedConfig.config)
+
 module.exports = merge(sharedConfig.config, {
   devtool: 'sourcemap',
 

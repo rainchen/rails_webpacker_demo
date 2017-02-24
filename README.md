@@ -43,4 +43,16 @@ cd rails_webpack_demo
 
 ## Tips
 
-react codes saved in `app/javascript/todomvc/`, which are copy and slightly modified from [todomvc react example](https://github.com/tastejs/todomvc/tree/gh-pages/examples/react/js)
+* react codes saved in `app/javascript/todomvc/`, which are copy and slightly modified from [todomvc react example](https://github.com/tastejs/todomvc/tree/gh-pages/examples/react/js)
+
+* To active HMR(Hot Module Replacement)
+
+  1. start webpack-dev-server with `--hot` option：
+
+     `./bin/webpack-dev-server --hot`
+
+  2. start rails server with `WEBPACK_DEV_SERVER` env：
+
+     `WEBPACK_DEV_SERVER=true ./bin/rails s`
+
+  3. open `http://localhost:3000` and watch, should see logs "[WDS] Hot Module Replacement enabled." in Chrome Console, modify any js codes in `app/javascript/` to trigger HMR
